@@ -1,4 +1,13 @@
-## The following functions implement a caching system for computing the inverse of a matrix.
+## The following functions implement a caching system for computing the inverse of a matrix
+##
+## example to validate: 
+##   t <- makeCacheMatrix(matrix(c(2, 3, 1, 4), nrow = 2, ncol = 2))
+##   cacheSolve(t)
+##
+## expected response
+##       [,1] [,2]
+## [1,]  0.8 -0.2
+## [2,] -0.6  0.4
 
 ## creates a cachable matrix object
 makeCacheMatrix <- function(x = matrix()) {
