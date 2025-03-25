@@ -3,8 +3,18 @@
 
 ## Write a short comment describing this function
 
+## creates a cachable matrix object
 makeCacheMatrix <- function(x = matrix()) {
+        # initialize the inverse
+        v <- NULL
 
+        # reset the value of the matrix and the cached object
+        set <- function(y) {
+                x <<- y
+                v <<- NULL
+        }
+
+        
 }
 
 
